@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>My Portfolio</title>
+    <link rel="icon" type="image" href="icons/fav-icon.png">
+    <style>
+    </style>
+</head>
+
+<!-- Main Body Starts -->
+
+<body>
+    <!-- Header Starts -->
+    <header>
+
+        <!-- Navigation Bar Starts -->
+        <nav class="navbar">
+            <div class="logo"><a href="#">Sanket</a>
+                    <i onclick="show()" class="fa-solid fa-bars" id="bars"></i>
+                    <i onclick="hide()" class="fa-solid fa-xmark" id="xmark"></i></label>
+            </div>
+
+
+
+            <div class="nav-list1">
+                <ul class="nav-list">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Navigation Bar Ends -->
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Home Starts -->
+    <div class="nav-list2" id="nav-list2">
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        </label>
+    </div>
+
+    <div class="home1" id="Home">
+        <div class="intro">
+            <h1>Hi There,<br>I'm <span>Sanket Nawale</span></h1>
+            <br>
+            <h3>I Am Into <span>Full Stack Web Development</span></h3>
+
+            <button id="about-btn" type="button"><a href="#About">About Me <i
+                        class="fa-solid fa-angle-down"></i></a></button>
+
+            <div class="icons">
+                <i class="fa-brands fa-github fa-3x"></i>
+                <i class="fa-brands fa-square-facebook fa-3x"></i>
+                <i class="fa-brands fa-linkedin fa-3x"></i>
+                <i class="fa-brands fa-instagram fa-3x"></i>
+                <i class="fa-brands fa-square-twitter fa-3x"></i>
+            </div>
+        </div>
+        <div class="intro-img">
+            <img src="images/my_photo1.png" alt="intro-image">
+
+        </div>
+    </div>
+
+    <!-- Home Ends -->
+
+    <!-- About Starts -->
+
+    <div class="about1" id="About">
+        <h1 id="about-h1"><i class="fa-solid fa-user"></i> About <span>Me</span></h1>
+        <div class="about2">
+            <div class="my-img1">
+                <img id="my-img" src="images/my-image.jpg" height="400px">
+            </div>
+
+            <div class="my-info1">
+                <p id="info-p1">I'm Sanket, Nice to meet you</p><br>
+                <p>I am a Full-Stack Web Developer based in Pune, India. I am an Information Technology undergraduate
+                    from
+                    Pune University. I am very passionate about improving my coding skills & developing applications &
+                    websites. I
+                    build WebApps and Websites using MERN Stack. Working for myself to improve my skills. </p>
+                <br>
+                <b>Phone :</b> +91 7350490381
+                <pre>      </pre>
+                <b>Email :</b> sanketmn26@gmail.com
+                <pre>     </pre>
+                <b>Address :</b> Pune, India - 411041
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About Ends -->
+
+    <!-- Skill Starts -->
+
+    <div class="skills1" id="Skills">
+        <h1 id="skills-h1"><i class="fa-solid fa-laptop-code"></i> Skills & <span> Abilities</span></h1>
+
+        <div class="skills2" id="skills2-id">
+            <div class="grid1">
+                <div class="skills2-grid1"> <img src="icons/html-icon.png"> <br>HTML5</div>
+                <div class="skills2-grid1"> <img src="icons/css-icon.png"> <br>CSS3</div>
+                <div class="skills2-grid1"> <img src="icons/c-icon.png"> <br>C</div>
+                <div class="skills2-grid1"> <img src="icons/github-icon.png"> <br>Github</div>
+            </div>
+            <div class="grid2">
+                <div class="skills2-grid2"> <img src="icons/wp-icon.png"> <br>Wordpress</div>
+                <div class="skills2-grid2"> <img src="icons/js-icon.png"> <br>JavaScript</div>
+                <div class="skills2-grid2"> <img src="icons/bs-icon.png"> <br>Bootstrap</div>
+                <div class="skills2-grid2"> <img src="icons/netlify-icon.png"> <br>Netlify</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skill Ends -->
+
+    <!-- Contact Starts -->
+
+    <div class="contact1" id="Contact">
+        <h1 id="contact-h1"><i class="fa-solid fa-headset"></i> Get in <span> Touch</span></h1>
+
+        <div class="contact2">
+            <div class="contact-img"><img src="images/contact.jpg">
+            </div>
+            <div class="contact-form">
+                <form method="post">
+                    <input type="text" placeholder="Name" required><br>
+                    <input type="email" placeholder="Email" required><br>
+                    <input type="tel" placeholder="Phone" required><br>
+                    <textarea placeholder="Message" rows="7" cols="21" required></textarea><br>
+                    <input id="submit-btn" type="submit" type="submit" value="Submit"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Ends -->
+
+    <!-- Footer Starts -->
+
+    <div class="footer-main">
+        <div class="footer">
+            <div class="footer1">
+                <p><Span>Sanket's Portfolio</Span><br><br>Thank you for visiting my personal portfolio website. Connect
+                    with
+                    me
+                    over socials.<br><br>Keep Rising 🚀.
+                <p>
+            </div>
+            <div class="footer2">
+                <span>Quick Links</span><br><br>
+                <ul class="footer2-links">
+                    <li><a href="#Home"><i class="fa-solid fa-circle-chevron-right"></i> Home</a></li>
+                    <li><a href="#About"><i class="fa-solid fa-circle-chevron-right"></i> About</a></li>
+                    <li><a href="#Skills"><i class="fa-solid fa-circle-chevron-right"></i> Skills</a></li>
+                    <li><a href="#Contact"><i class="fa-solid fa-circle-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <span class="footer3-a">Contact Info</span><br><br>
+                <p class="footer3-b"><i class="fa-solid fa-phone"></i> +91 7350490381 </p>
+                <p class="footer3-b"><i class="fa-solid fa-envelope"></i> sanketmn26@gmail.com </p>
+                <p class="footer3-b"><i class="fa-solid fa-location-dot"></i> Pune, India - 411041 </p>
+
+                <div class="icons2">
+                    <i class="ftr fa-brands fa-github fa-2x"></i>
+                    <i class="ftr fa-brands fa-square-facebook fa-2x"></i>
+                    <i class="ftr fa-brands fa-linkedin fa-2x"></i>
+                    <i class="ftr fa-brands fa-instagram fa-2x"></i>
+                    <i class="ftr fa-brands fa-square-twitter fa-2x"></i>
+                </div>
+            </div>
+        </div>
+        <hr style="width:90%;height: 1px;border-width:0;color:gray;background-color:gray;margin: auto;">
+        <p id="footer-bottom">Made With Passion <i class="fa-solid fa-heart fa-beat"></i></p>
+    </div>
+    <!-- Footer Ends -->
+    <script>
+        function show() {
+            document.getElementById('nav-list2').style.right="-70%";
+            document.getElementById('bars').style.display = "none";
+            document.getElementById('xmark').style.display = "block";
+            document.getElementById('xmark').style.color = "black";
+
+
+
+
+        }
+        function hide() {
+            document.getElementById('nav-list2').style.right = "-105%";
+            document.getElementById('bars').style.display = "block";
+            document.getElementById('xmark').style.display = "none";
+
+
+        }
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/88bc3d5a38.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
